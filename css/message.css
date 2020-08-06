@@ -1,0 +1,32 @@
+/* message */
+.message-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.message-block {
+    position: relative;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 4px;
+    opacity: .6;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.message-block embed {
+    margin: 14px;
+}
+
+.message-block a {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.message-block a:first-line {
+    font-weight: bold;
+}

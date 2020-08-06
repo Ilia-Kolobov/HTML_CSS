@@ -1,0 +1,110 @@
+body {
+    background-color: #f8f9fc;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    animation: mymove 2s none;
+    z-index: 3;
+}
+
+.container {
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/*header animation*/
+@keyframes mymove {
+    from {
+        top: -56px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+/* footer */
+.footer {
+    margin-top: 120px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+/* Responsive*/
+@media (max-width: 960px) {
+    .main-content {
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 600px;
+        display: grid;
+        grid-template-rows: repeat(16, 6.25%);
+        grid-template-columns: repeat(18, 5.55%);
+        color: #f8f9fc;
+        position: relative;
+        top: 100px;
+    }
+
+    .flip-js-container {
+        grid-area: 1/9/9/15;
+    }
+
+    .contacts-conteiner {
+        grid-area: 7/15/9/19;
+    }
+
+    .blog-conteiner {
+        grid-area: 4/15/7/19;
+    }
+
+    .events-conteiner {
+        grid-area: 1/15/4/19;
+    }
+
+    .flip-binary-container {
+        grid-area: 1/1/9/9;
+    }
+
+    .net-conteiner {
+        grid-area: 13/10/17/19;
+    }
+
+    .php-conteiner {
+        grid-area: 9/10/13/19;
+    }
+
+    .java-conteiner {
+        grid-area: 9/1/13/10;
+    }
+
+    .flip-qa-container {
+        grid-area: 13/1/17/10;
+    }
+
+    .header-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

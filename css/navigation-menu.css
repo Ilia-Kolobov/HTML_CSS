@@ -1,0 +1,128 @@
+/*navigation-menu*/
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navigation img:hover {
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+
+/*avatar*/
+.avatar {
+    background-color: #f8991c;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.avatar-button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.avatar-button:hover {
+    background-color: #f48e18;
+}
+
+.avatar-button:focus {
+    pointer-events: none;
+}
+
+/* drop-menu */
+.avatar-button:focus+.drop-menu {
+    visibility: visible;
+}
+
+.drop-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    top: 55px;
+    box-shadow: 0 0 20px rgb(155, 157, 181, 52%);
+    padding: 10px;
+    visibility: hidden;
+}
+
+.avatar-picture {
+    width: 45px;
+    height: 45px;
+    font-size: 1.7rem;
+    margin-right: 13px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.drop-menu .user-name {
+    font-size: 75%;
+    color: #aab4be;
+    display: flex;
+    align-items: center;
+}
+
+.drop-menu hr {
+    display: block;
+    border: none;
+    background-color: #aab4be;
+    height: 1px;
+    width: 100%;
+}
+
+.drop-menu ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    align-self: baseline;
+    color: black;
+}
+
+.drop-menu ul li {
+    display: flex;
+    font-size: 80%;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    align-content: center;
+}
+
+.drop-menu ul li:hover {
+    background: #f8f9fc;
+}
+
+.user-info .name {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.user-info .email {
+    color: #aab4be;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-items img {
+    margin-right: 10px;
+}
+
+.email:hover {
+    filter: brightness(0.7);
+}
+
